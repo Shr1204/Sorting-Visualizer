@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <h1>Sorting Algorithm Visualizer</h1>
+
+  <div class="controls">
+    <button id="bubble">Bubble Sort</button>
+    <button id="selection">Selection Sort</button>
+    <button id="merge">Merge Sort</button>
+    <button id="quick">Quick Sort</button>
+    <button onclick="window.location.reload()">Reset</button>
+    
+    <div class="array-settings">
+        <label for="sizeSlider">Array Size:</label>
+        <input type="range" id="sizeSlider" min="10" max="100" value="50">
+        <span id="sizeValue">50</span>
+        <button id="newArray">Generate New Array</button>
+    </div>
+  </div>
+
+  <div id="bar-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
